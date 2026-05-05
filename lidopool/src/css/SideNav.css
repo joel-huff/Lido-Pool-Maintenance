@@ -1,0 +1,14 @@
+.navbar-side {
+    margin-top: 1rem;
+    align-items: center;
+    height: 100%;
+    width: 120px;
+    background-color: blue;
+}
+
+.navbar-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    
+}

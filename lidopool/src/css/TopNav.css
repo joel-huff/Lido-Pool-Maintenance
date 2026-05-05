@@ -1,0 +1,20 @@
+.navbar{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #0B2A4A;
+}
+.navbar-brand{
+    display: inline-flex;
+    gap: 1rem;
+
+}
+.topnav-list{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 1rem;
+}

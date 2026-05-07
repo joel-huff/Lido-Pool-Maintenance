@@ -11,6 +11,7 @@ function Sidebar(){
                         <li key={key}><div className='navbar-listitem'>{val.icon} {val.title}</div></li>
                     )
                 })}
+                <div className="nav-divider"></div>
                 <div className="bottom-logout">
                     <li>Logout</li>
                 </div>

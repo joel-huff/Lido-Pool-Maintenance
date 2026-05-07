@@ -5,16 +5,23 @@ import './App.css'
 
 function App() {
 
-  return (
+  return(
     <>
-      <header>
-        <TopNav />
-      </header>
-      <main>
-        <Sidebar />
-      </main>
+      <div className='app'>
+          <div className='container'>
+        <header>
+          <TopNav />
+        </header>
+        <main>
+          <Sidebar/>
+        </main>
+      </div>
+      </div>
+
     </>
   )
 }
+  
 
-export default App
+
+export default App;

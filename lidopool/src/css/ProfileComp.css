@@ -1,0 +1,17 @@
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.25rem;
+}
+.profile-info{
+    cursor: pointer;
+}
+.profile-text{
+    text-align: center;
+    line-height: 1.25rem;
+}
+.position{
+    font-size: .85rem;
+}

@@ -1,30 +1,41 @@
 .navbar-side {
     color: white;
     background-color: #0B2A4A;
-    height: 100vh;
-    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .navbar-list{
     list-style: none;
     font-size: 1.5rem;
-    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
 }
 .navbar-listitem{
     display: flex;
     gap: .5rem;
     line-height: 4rem;
     align-items: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
+}
+.navbar-listitem:hover, .bottom-logout:hover{
+    cursor: pointer;
+    background-color: #155AB6;
+    border-radius: 5%;
 }
 .bottom-logout{
-    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 1.25rem;;
 }
 .nav-divider{
-    margin-top: 32em;
     margin-left: 15px;
     margin-right: 15px;
     background-color: white;
     height: 1px;
+    border-radius: 22%;
 }

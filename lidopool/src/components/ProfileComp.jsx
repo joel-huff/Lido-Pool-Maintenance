@@ -1,4 +1,5 @@
 import Avatar from '@mui/material/Avatar';
+import { ProfileCompData } from './component-data/ProfileCompData';
 import '../css/ProfileComp.css'
 
 function ProfileComp(){
@@ -6,8 +7,15 @@ function ProfileComp(){
         <div className='profile-info'>
             <div><Avatar>JD</Avatar></div>
             <div className='profile-text'>
-                <p>Jane Doe</p>
-                <p className='position'>Technician</p>
+                {ProfileCompData.map((val,key)=>{
+                    return(
+                            <div key={key}> 
+                                <p>{val.name}</p>
+                                <p className='position'>{val.title}</p>
+                            </div>
+                    )
+                })}
+
             </div>
         </div>
         

@@ -5,15 +5,21 @@
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #0B2A4A;
-    height: 5rem;
+    /* height: 5rem; */
 }
 .navbar-brand{
     display: inline-flex;
     gap: 1rem;
+    align-items: center;
 }
+
 .topnav-list{
     display: inline-flex;
     align-items: center;
     text-decoration: none;
     list-style: none;
+    gap: 3rem;
+}
+.notifications:hover{
+    cursor:pointer
 }

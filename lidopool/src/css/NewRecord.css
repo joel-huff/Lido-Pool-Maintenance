@@ -1,0 +1,60 @@
+.input-component{
+    background-color: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.record-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.record-container{
+    padding: 18px;
+    height: 100%;
+}
+.form-main{
+    padding: 25px;
+}
+.input-range{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    gap: 15px;
+}
+.input-form{
+    display: flex;
+    justify-content: space-between;
+}
+.range-class{
+    text-align: center;
+    border: 1px solid #22C55E;
+    border-radius: 10px;
+    background-color: #d6f7e2;
+    padding: 15px;
+    width: 10%;
+    color: #22C55E;
+}
+.chemical-input{
+    width: 80%;
+    border: 1px solid #9c9d9e;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 5px;
+}
+.form-notes{
+    display: flex;
+    flex-direction: column;
+
+}
+.notes-input{
+    font-size: 18px;
+    width: 75%;
+    height: 75px;
+}

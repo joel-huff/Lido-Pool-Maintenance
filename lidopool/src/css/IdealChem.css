@@ -1,9 +1,11 @@
 .ideal-class{
-    height: 20%;
+    height: 22%;
     border: 1px solid #E2E8F0;
     border-radius: 10px;
     padding: 18px;
     background-color: white;
+    margin: 0 5% 2.5% 5%;
+    
 }
 .ideal-container{
     display: grid;
@@ -15,7 +17,7 @@
         'footer';
     gap: 40px;
     height: 20%;
-
+    
 }
 .title-chem{
     grid-area: header;
@@ -41,7 +43,8 @@
     flex-direction: column;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5%;
-    width: 30%;
+    width: 25%;
+    padding: 20px;
     justify-content: space-evenly;
 }
 .ideal-line{

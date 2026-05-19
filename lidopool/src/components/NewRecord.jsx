@@ -1,6 +1,7 @@
 import WaterDropIcon from '@mui/icons-material/WaterDrop';
-import { NewRecordData } from './component-data/NewRecordData'
-import '../css/NewRecord.css'
+import { NewRecordData } from './component-data/NewRecordData';
+import { ServicesData } from './component-data/ServicesData';
+import '../css/NewRecord.css';
 
 function NewRecord(){
     return(
@@ -27,15 +28,22 @@ function NewRecord(){
                             )
                         })}
                         <div className='form-notes'>
-                            <label htmlFor="notes">Notes on Pool</label>
-                            <input className='notes-input' type="text" />
+                            <div className='check-format'>
+                            {ServicesData.map((val, key)=>{
+                                return(
+                                    <div className='form-checks'>
+                                        <input key={key} type='checkbox' id={val.title} name={val.title} value={val.title}/>
+                                        <label htmlFor="vacuum">{val.label}</label>
+                                    </div>
+                                )
+                            }
+                            )}
+                            </div>
+                            <div className='submit-buttons'>
+                                <input className='submit-button' type="submit" />
+                                <button className='clear-button'>Clear</button>
+                            </div>
                         </div>
-                        
-                        <div>
-                            <input type="submit" />
-                            <button>Clear</button>
-                        </div>
-                    
                     </form>
                 </main>
             </div>

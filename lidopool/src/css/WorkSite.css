@@ -1,0 +1,20 @@
+.worksite-container{
+    background-color: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    height: 22%;
+    margin: 0 5% 2.5% 5%;
+}
+.worksit-info{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.25rem;
+}
+.pool-photo{
+    width: 275px;
+    border-radius: 10px;
+}

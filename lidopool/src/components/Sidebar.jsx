@@ -2,20 +2,34 @@ import { Link } from "react-router-dom";
 import '../css/SideNav.css'
 import { SidebarData } from './component-data/SidebarData.jsx'
 import LogoutIcon from '@mui/icons-material/Logout';
+import { useState } from "react";
 
-function Sidebar(){
+function Sidebar({selectedIndex, setSelectedIndex}){
+    
+
+    const sideItems = SidebarData.map((val, index) => {
+    return (
+        <li key={index}>
+            <div
+                className={`navbar-listitem ${
+                    selectedIndex === index ? "active" : ""
+                }`}
+                onClick={() => setSelectedIndex(index)}
+            >
+                {val.icon}
+                {val.title}
+            </div>
+        </li>
+    );
+});
     return(
         <nav className="navbar-side">
             <ul className="navbar-list">
-                {SidebarData.map((val, key)=>{
-                    return(
-                        <li key={key}><div className='navbar-listitem'>{val.icon} {val.title}</div></li>
-                    )
-                   })}
+                { sideItems }
             </ul>
                 <div className="nav-break">
                     <div className="nav-divider"></div>
-                    <div className="bottom-logout">
+                    <div className="navbar-list">
                         <p><div className='navbar-listitem'><LogoutIcon fontSize="large"/>Logout</div></p>
                     </div>
                 </div>

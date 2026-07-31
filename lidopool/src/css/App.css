@@ -25,17 +25,36 @@ SideBar{
 }
 .main-container{
   display: grid;
-  grid-template-columns: 55% 45%;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: 
     'header header'
     'navbar main';
   padding: 2%;
-  gap: 2%;
 }
 .left-column{
   grid-area: navbar;
+  background-color: white;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
 }
 .right-column{
   grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 25px;
+}
+
+.right-components{
+  list-style: none;
+  height: 100%;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 18px;
+  background-color: white;
+  margin: 0 5% 0% 5%;
+  
 }

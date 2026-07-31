@@ -1,7 +1,7 @@
 export const NewRecordData = [
     {
         label: "Total Chroline",
-        id: "totCholrine"
+        id: 'totCholrine'
     },
     {
         label: "Free Chroline",

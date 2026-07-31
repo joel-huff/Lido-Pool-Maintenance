@@ -18,11 +18,19 @@
     gap: .5rem;
     line-height: 4rem;
     align-items: center;
+    padding: 2.5%;
 }
 .navbar-listitem:hover, .bottom-logout:hover{
     cursor: pointer;
+}
+.bottom-logout:hover{
     background-color: #155AB6;
-    border-radius: 5%;
+    border-radius: 3%;
+}
+.navbar-listitem.active {
+    background-color: #155AB6;
+    border-radius: 3%;
+    transition: .25s;
 }
 .bottom-logout{
     display: flex;
@@ -30,7 +38,7 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
     padding: 1rem;
-    font-size: 1.25rem;;
+    font-size: 1.25rem;
 }
 .nav-divider{
     margin-left: 15px;

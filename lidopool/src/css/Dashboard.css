@@ -1,0 +1,29 @@
+.dashboard-page{
+    padding: 1%;
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+ }
+.input-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.chemistry-main{
+    display: grid;
+    grid-template-columns: 1fr 60%;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+        'newrecord worksite'
+        'recent recent';
+    gap: 2%;
+}
+.newrecord {
+    grid-area: newrecord;
+}
+WorkSite{
+    grid-area: worksite;
+}
+.idealchem{
+    grid-area: recent;
+}

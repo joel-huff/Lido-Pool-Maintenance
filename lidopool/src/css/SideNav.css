@@ -12,6 +12,7 @@
     font-size: 1.5rem;
     margin-top: 1rem;
     padding: 1rem;
+    box-sizing: border-box;
 }
 .navbar-listitem{
     display: flex;
@@ -19,6 +20,7 @@
     line-height: 4rem;
     align-items: center;
     padding: 2.5%;
+    box-sizing: border-box;
 }
 .navbar-listitem:hover, .bottom-logout:hover{
     cursor: pointer;

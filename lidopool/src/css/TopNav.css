@@ -1,23 +1,24 @@
-.navbar{
+.navbar {
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #0B2A4A;
-    /* height: 5rem; */
 }
-.navbar-brand{
+
+.navbar-brand {
     display: inline-flex;
     gap: 1rem;
     align-items: center;
 }
 
-.topnav-list{
-    display: inline-flex;
+.topnav-list {
+    display: flex;
     align-items: center;
-    text-decoration: none;
     list-style: none;
+    margin: 0;
+    padding: 0;
     gap: 3rem;
 }
 .notifications:hover{

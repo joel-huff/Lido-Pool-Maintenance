@@ -1,93 +1,76 @@
-.record-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
-}
-.record-container{
-    padding: 10px;
-}
-.form-main{
-    padding: 10px;
-}
-.input-range{
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid #E2E8F0;
-    border-radius: 10px;
-    gap: 15px;
-}
-.input-form{
-    display: flex;
-    justify-content: space-between;
-}
-.out-range-class, .in-range-class{
-    text-align: center;
-    border-radius: 10px;
-    padding: 15px;
-    width: 15%;
-}
-.out-range-class{
-    border: 1px solid #c54322;
-    background-color: #f7e3d6;
-    color: #c56322;
-}
-.in-range-class{
-    border: 1px solid #22C55E;
-    background-color: #d6f7e2;
-    color: #22C55E;
-}
-.chemical-input{
-    width: 75%;
-    border: 1px solid #9c9d9e;
-    border-radius: 10px;
-    font-size: 24px;
-    padding: 5px;
-}
-.form-notes{
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-    gap: 15px;
-}
-.notes-input{
-    font-size: 18px;
-    width: 100%;
-    height: 75px;
-    border-radius: 10px;
-    border: 1px solid #9c9d9e;
-    
-}
-.submit-buttons{
-    display: flex;
-    justify-content: space-between;
-}
-.submit-button, .clear-button{
-    width: 45%;
-    border-radius: 10px;
-    font-size: 18px;
-    height: 50px;
-    border: 1px solid #155AB6;
-}
-.submit-button{
-    background-color:#155AB6;
-    color: white;
-}
-.clear-button{
-    color: #155AB6;
+ .new-record{
     background-color: white;
-}
-.check-format{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    padding: 2%;
-    gap: 25%;
+    padding: 2rem;
     font-size: 16px;
-}
-.form-checks{
+    border-radius: 25px;
+    border: 1px solid #cacad1;
     display: flex;
-    gap: 33%;
+    flex-direction: column;
+    gap: 30px;
+ }
+ .new-record header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+ .input-form{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+ }
+ .save-button{
+    background-color: #155AB6;
+    height: 70px;
+    font-size: 28px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid  #5991da}
+
+ .input-format{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-content: center;
+    font-size: 24px;
+    align-items: center;
+ }
+ .input-format input{
+    width: 60%;
+    height: 3.75rem;
+    border-radius: 10px;
+    border: 1px solid #cacad1;
+    font-size: 24px;
+    padding-left: 2%;
+    
+ }
+ .testtube-color, .droplet-color, .droplets-color, .rflask-color{
+    padding: .25rem;
+    border-radius: 5px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testtube-color{
+    background-color: rgb(221, 243, 211);
+}
+.droplet-color{
+    background-color: #cfb8d6;
+}
+.rflask-color{
+    background-color: #aed4e2;
+}
+.droplets-color{
+    background-color: #99a1cc;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }

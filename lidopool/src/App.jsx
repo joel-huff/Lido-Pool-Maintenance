@@ -1,16 +1,16 @@
 import { useState } from 'react'
 import TopNav from './components/TopNav'
 import Sidebar from './components/Sidebar'
-
-import Dashboard from './components/Dashboard'
+import Chemistry from './pages/Chemistry'
+import Services from './pages/Services'
 import './css/App.css'
 
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const pages = [
-    <Dashboard/>,
-    <h1>Sites</h1>,
+    <Chemistry/>,
+    <Services/>,
     <h1>Readings</h1>,
     <h1>Alerts!</h1>
   ];
@@ -18,20 +18,16 @@ function App() {
   return(
     <>
       <div className='app'>
-        <div className='container'>
           <header>
             <TopNav />
           </header>
-          <nav>
-            <Sidebar 
-              selectedIndex={selectedIndex}
-              setSelectedIndex={setSelectedIndex}
-            />
-          </nav>
-          <main className='main-container'>
+          <Sidebar 
+            selectedIndex={selectedIndex}
+            setSelectedIndex={setSelectedIndex}
+          />
+          <main>
             {pages[selectedIndex]}
           </main>
-        </div>
       </div>
     </>
   )

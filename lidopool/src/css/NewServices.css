@@ -1,0 +1,54 @@
+.cleaning-bool{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+}
+.yesno{
+    display: flex;
+    gap: 75%;
+}
+.bool-select:active{
+    background-color: #155AB6;
+    border-radius: 3%;
+    transition: .25s;
+}
+.bool-select:hover{
+    cursor: pointer;
+}
+.services-input input{
+    width: 60%;
+    height: 3rem;
+    border-radius: 10px;
+    border: 1px solid #cacad1;
+    font-size: 22px;
+    padding-left: 2%;
+}
+.services-input{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-content: center;
+    font-size: 22px;
+    align-items: center;
+}
+ .chlorine-icon, .shock-icon, .soda-icon, .sodium-icon{
+    padding: .25rem;
+    border-radius: 5px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chlorine-icon{
+    background-color: #aed4e2;
+}
+.shock-icon{
+    background-color: #99a1cc;
+}
+.soda-icon{
+    background-color: rgb(221, 243, 211);
+}
+.sodium-icon{
+    background-color: #f7bf58;
+}

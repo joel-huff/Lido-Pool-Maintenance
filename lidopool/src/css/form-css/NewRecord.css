@@ -29,8 +29,8 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    border: 1px solid  #5991da}
-
+    border: 1px solid  #5991da
+   }
  .input-format{
     display: flex;
     flex-direction: row;

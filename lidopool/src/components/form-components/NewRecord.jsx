@@ -2,7 +2,7 @@ import { FlaskConical } from 'lucide-react';
 import { Save } from 'lucide-react';
 import { NewRecordData } from '../component-data/NewRecordData';
 import { useState } from 'react';
-import '../../css/NewRecord.css';
+import '../../css/form-css/NewRecord.css';
 
 
 function NewRecord(props){

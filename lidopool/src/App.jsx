@@ -1,8 +1,11 @@
 import { useState } from 'react'
-import TopNav from './components/TopNav'
-import Sidebar from './components/Sidebar'
+import TopNav from './components/nav-components/TopNav'
+import Sidebar from './components/nav-components/Sidebar'
 import Chemistry from './pages/Chemistry'
 import Services from './pages/Services'
+import Readings from './pages/Readings'
+import Worksites from './pages/Worksites'
+import Alerts from './pages/Alerts'
 import './css/App.css'
 
 
@@ -11,8 +14,9 @@ function App() {
   const pages = [
     <Chemistry/>,
     <Services/>,
-    <h1>Readings</h1>,
-    <h1>Alerts!</h1>
+    <Readings />,
+    <Worksites />,
+    <Alerts />
   ];
 
   return(

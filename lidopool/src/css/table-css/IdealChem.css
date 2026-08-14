@@ -8,33 +8,6 @@
     gap: 30px;
     overflow: hidden;
  }
- /* .recent-container p{
-   text-align: center;
-   font-size: 1.5rem;
-   color:#155AB6;
- }
-.recent-container p:hover{
-   cursor: pointer;
- }
- .recent-table{
-   border-collapse: separate;
-   border-spacing: 0;
-   border: 1px solid #cacad1;
-   table-layout: fixed;
-   text-align: center;
-   font-size: 1.5rem;
-   border-radius: 10px;
-   height: 5rem;
- }
-.table-header{
-   background-color: #cacad1;
-}
-th:first-child{
-   border-top-left-radius: 10px;
-}
-th:last-child{
-   border-top-right-radius: 10px;
-} */
  .recent-table{
    width: 100%;
    border-collapse: collapse;

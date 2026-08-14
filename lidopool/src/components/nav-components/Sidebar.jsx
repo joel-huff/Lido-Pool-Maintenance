@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import '../css/SideNav.css'
-import { SidebarData } from './component-data/SidebarData.jsx'
+import '../../css/nav-css/SideNav.css'
+import { SidebarData } from './../component-data/SidebarData.jsx'
 import LogoutIcon from '@mui/icons-material/Logout';
 import { useState } from "react";
 

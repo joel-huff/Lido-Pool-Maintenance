@@ -1,6 +1,6 @@
 import Avatar from '@mui/material/Avatar';
-import { ProfileCompData } from './component-data/ProfileCompData';
-import '../css/ProfileComp.css'
+import { ProfileCompData } from './../component-data/ProfileCompData';
+import '../../css/nav-css/ProfileComp.css'
 
 function ProfileComp(){
     return(

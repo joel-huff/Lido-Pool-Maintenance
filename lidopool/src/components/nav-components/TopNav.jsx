@@ -2,7 +2,7 @@ import WavesIcon from '@mui/icons-material/Waves';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ProfileComp from './ProfileComp';
 import { Link } from "react-router-dom";
-import '../css/TopNav.css'
+import '../../css/nav-css/TopNav.css'
 
 function TopNav() {
     return <nav className='navbar'>

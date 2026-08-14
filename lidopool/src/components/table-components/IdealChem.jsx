@@ -1,6 +1,6 @@
 import { IdealChemData } from "../component-data/IdealChemData"
 import ScienceIcon from '@mui/icons-material/Science';
-import '../../css/IdealChem.css'
+import '../../css/table-css/IdealChem.css'
 
 function IdealChem(){
     return(

@@ -3,7 +3,7 @@ import { Save } from 'lucide-react';
 import { NewCleanServicesData } from '../component-data/NewServicesData';
 import {NewChemServicesData} from '../component-data/NewServicesData';
 import { useState } from 'react';
-import '../../css/NewServices.css';
+import '../../css/form-css/NewServices.css';
 
 
 function NewServices(){

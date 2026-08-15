@@ -6,17 +6,17 @@ export const NewCleanServicesData = [
     {
         key: 0,
         heading: 'Did you vacuum the pool?',
-        id: 'vacuum'
+        name: 'vacuum'
     },
     {
         key: 1,
         heading: 'Did you clean the bathroom?',
-        id: 'bathroom'
+        name: 'bathroom'
     },
     {
         key: 2,
         heading: 'Did you tidy the furniture?',
-        id: 'furnity'
+        name: 'furnity'
     }
 ]
 
@@ -27,7 +27,11 @@ export const NewChemServicesData = [
         icon: <Database/>,
         iconClass: 'chlorine-icon',
         measure: 'tabs',
-        id: 'chlorine'
+        id: 'chlorine',
+        minimum: '0',
+        maximum: '30',
+        steps: '1.0',
+        name: 'chlorineTabs'
     },
     {
         key: 1,
@@ -35,7 +39,11 @@ export const NewChemServicesData = [
         icon: <Zap/>,
         iconClass: 'shock-icon',
         measure: 'scoops',
-        id: 'shock'
+        id: 'shock',
+        minimum: '0',
+        maximum: '30',
+        steps: '1.0',
+        name: 'shockScoops'
     },
     {
         key: 2,
@@ -43,7 +51,11 @@ export const NewChemServicesData = [
         icon: <PaperBag/>,
         iconClass: 'soda-icon',
         measure: 'scoops',
-        id: 'ash'
+        id: 'ash',
+        minimum: '0',
+        maximum: '50',
+        steps: '1.0',
+        name: 'sodaScoops'
     },
     {
         key: 3,
@@ -51,6 +63,10 @@ export const NewChemServicesData = [
         icon: <PaperBag/>,
         iconClass: 'sodium-icon',
         measure: 'scoops',
-        id: 'bicarb'
+        id: 'bicarb',
+        minimum: '0',
+        maximum: '50',
+        steps: '1.0',
+        name: 'bicarbScoops'
     }
 ]

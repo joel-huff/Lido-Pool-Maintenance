@@ -1,11 +1,33 @@
 import { FlaskConical } from 'lucide-react';
 import { Save } from 'lucide-react';
 import { NewRecordData } from '../component-data/NewRecordData';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import '../../css/form-css/NewRecord.css';
 
 
-function NewRecord(props){
+function NewRecord({currentTime}){
+
+    const [readings, setReadings] = useState({
+        freeChlorine: '',
+        totalChlorin: '',
+        ph: '',
+        alkalinity: ''
+    })
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+
+        console.log('Submitted readings:', readings, new Date())
+        
+    }
+    const handleChange = (e) => {
+        const{name, value} = e.target;
+
+        setReadings(prev => ({
+            ...prev,
+            [name]: value
+        }))
+    }
+
     return(
         <>
             <div className='new-record'>
@@ -13,7 +35,7 @@ function NewRecord(props){
                     <FlaskConical size={40}/>
                     <h1> Water Chemistry</h1>
                 </header>
-                <form className='input-form'>
+                <form className='input-form' onSubmit={handleSubmit}>
                     {
                         NewRecordData.map((e) => (
                             <div key={e.key} className='input-container' >
@@ -22,13 +44,21 @@ function NewRecord(props){
                                     <label className={e.iconClass}>
                                         {e.icon}
                                     </label>
-                                    <input type="number" placeholder='Enter value'/>
+                                    <input 
+                                        value={readings[e.key]} 
+                                        type="number" 
+                                        placeholder='Enter value' 
+                                        min={e.minimum} 
+                                        max={e.maximum} 
+                                        step={e.steps}
+                                        onChange={handleChange}
+                                        name={e.name}/>
                                     {e.range}
                                 </div>
                             </div>
                         ))
                     }
-                    <button className='save-button'>
+                    <button className='save-button' type='submit'>
                         <Save size={40}/>
                         Save Reading
                     </button>

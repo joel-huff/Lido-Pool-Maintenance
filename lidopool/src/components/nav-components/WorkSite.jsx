@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { MapPin } from 'lucide-react';
 import poolimage from '../../assets/Backyardpool.jpg'
 import '../../css/form-css/WorkSite.css'
-import { WorksiteOptions } from '../component-data/WorksiteOptions'
+import {WorksiteOptions} from '../component-data/WorksiteOptions'
+import WorksiteSelection from './WorksiteSelection';
 
 function WorkSite(){
     const [selectedWorksite, setSelectedWorksite] = useState(WorksiteOptions[0].worksite);
@@ -30,19 +31,10 @@ function WorkSite(){
     return(
         <div className='worksite-container'>
             <h1><MapPin/>Select Pool</h1>
-            <select className="worksite-select" name="" id="" filter="true" onChange={handleWorksiteChange} value={selectedWorksite}>
-            {WorksiteOptions.map((val, key) =>{
-                return(
-                    <option key={val.id} value={val.worksite}>{val.worksite}</option>
-                        )
-                })}
-
-            </select>
+            <WorksiteSelection onChange={handleWorksiteChange} value={selectedWorksite}/>
             <div className='map-container'>
-                <iframe src={worksiteLink} width="100%" height="100%" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <iframe src={worksiteLink} width="100%" height="100%" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="strict-origin-when-cross-origin"></iframe>
             </div>
-
-            
         </div>
     )
 }

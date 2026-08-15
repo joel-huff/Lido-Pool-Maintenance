@@ -7,7 +7,31 @@ import '../../css/form-css/NewServices.css';
 
 
 function NewServices(){
-    const [selectedYNIndex, setSelectedYNIndex] = useState(0);
+    const [radioReadings, setRadioReadings] = useState({
+        vacuum: 'yes',
+        bathroom: 'yes',
+        furniture: 'yes'
+    })
+    const [readings, setReadings] = useState({
+        chlorineTabs: '',
+        shockScoops: '',
+        sodaScoops: '',
+        bicarbScoops: ''
+    })
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(readings); 
+    }
+
+    const handleChange = (e) => {
+        const{name, value} = e.target;
+
+        setReadings(prev => ({
+            ...prev,
+            [name]:value
+        }))
+    }
 
     return(
         <>
@@ -16,15 +40,15 @@ function NewServices(){
                     <ClipboardList size={40}/>
                     <h1>New Service Record</h1>
                 </header>
-                <form className='input-form'>
+                <form className='input-form' onSubmit={handleSubmit}>
                     {
                         NewCleanServicesData.map((e) => (
-                            <div className='cleaning-bool'>
-                                <div key={e.key}>
+                            <div key={e.key} className='cleaning-bool'>
+                                <div >
                                     <h2>{e.heading}</h2>
                                 </div>
-                                <label htmlFor=""><input name={e.key} type="radio" value='yes'/> Yes</label>
-                                <label htmlFor=""><input name={e.key} type="radio" value='no' /> No</label>
+                                <label htmlFor=""><input checked={radioReadings===e.name}  name={e.name} type="radio" value='yes'/> Yes</label>
+                                <label htmlFor=""><input checked={radioReadings===e.name}  name={e.name} type="radio" value='no' /> No</label>
                                 
                             </div>
                         ))
@@ -37,7 +61,14 @@ function NewServices(){
                                     <label className={e.iconClass}>
                                         {e.icon}
                                     </label>
-                                    <input type="number" placeholder='Enter value'/>
+                                    <input 
+                                        type="number" 
+                                        placeholder='Enter value' 
+                                        min={e.minimum} 
+                                        max={e.maximum} 
+                                        step={e.steps}
+                                        onChange={handleChange}
+                                        name={e.name}/>
                                 </div>
                             </div>
                         ))

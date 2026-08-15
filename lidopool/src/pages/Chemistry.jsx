@@ -31,7 +31,7 @@ function Chemistry(){
                 </header>
                 <main className='chemistry-main'>
                     <div className='newrecord'>
-                        <NewRecord/>
+                        <NewRecord currentTime={time}/>
                     </div>
                     
                     <WorkSite />

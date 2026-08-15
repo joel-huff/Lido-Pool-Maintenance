@@ -30,7 +30,9 @@ function Sidebar({selectedIndex, setSelectedIndex}){
                 <div className="nav-break">
                     <div className="nav-divider"></div>
                     <div className="navbar-list">
-                        <p><div className='navbar-listitem'><LogoutIcon fontSize="large"/>Logout</div></p>
+                        <p className='navbar-listitem'>
+                            <LogoutIcon fontSize="large"/>Logout
+                        </p>
                     </div>
                 </div>
         </nav>

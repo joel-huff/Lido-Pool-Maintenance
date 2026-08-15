@@ -1,7 +1,9 @@
 import IdealChem from "../components/table-components/IdealChem"
 import TableSearch from "../components/table-components/TableSearch"
 import TableComp from "../components/table-components/TableComp"
+import NewWorkSite from "../components/form-components/NewWorksite"
 import'../css/pages-css/Worksites.css'
+import WorksiteSelection from "../components/nav-components/WorksiteSelection"
 
 function Worksites(){
     return(
@@ -13,8 +15,13 @@ function Worksites(){
                         <p>View and add new worksites</p>
                     </div>
                 </header>
-                <main>
-                    <TableComp />
+                <main className='chemistry-main'>
+                    <div className='newrecord'>
+                        <NewWorkSite/>
+                    </div>
+                    <div className="worksite-right">
+                        <IdealChem />
+                    </div>
                 </main>
             </div>
         </>

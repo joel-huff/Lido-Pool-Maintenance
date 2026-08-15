@@ -7,7 +7,7 @@
 }
 
 .export-button, .worksite-button{
-    height: 3rem;
+    height: 3.75rem;
     width: 10rem;
     font-size: 28px;
     border-radius: 10px;
@@ -19,22 +19,18 @@
     border: 1px solid  #5991da
 }
 .export-button{
-    background-color: white;
+    background-color: #155AB6;
+    color: white;
 }
-.worksite-button:hover, .export-button:hover{
+.export-button:hover{
     cursor: pointer;
 }
-.table-search{
-    height: 3rem;
-    width: 50rem;
-    font-size: 28px;
+
+.worksite-right select{
+    height: 3.75rem;
+    width: 33%;
     border-radius: 10px;
-    padding-left: 1rem;
-    display: flex;
-    flex-direction: row;
-}
-.search-button{
-    height: 3rem;
-    width: 3rem;
-    border-radius: 10px;
+    border: 1px solid #cacad1;
+    font-size: 24px;
+    padding-left: 2%;
 }
